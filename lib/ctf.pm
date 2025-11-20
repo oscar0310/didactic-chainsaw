@@ -19,3 +19,9 @@ has type => (  #Challenge type
 has ip => ( # System Ip
     is => 'ro',
 );
+
+has port => ( #System Port
+    is => 'ro',
+);
+
+1;
