@@ -16,4 +16,6 @@ has type => (  #Challenge type
     ],
 );
 
-
+has ip => ( # System Ip
+    is => 'ro',
+);
