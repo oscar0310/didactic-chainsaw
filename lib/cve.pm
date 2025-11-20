@@ -9,4 +9,8 @@ has description =>( # CVE description
     is => 'ro',
 );
 
+has links =>( #CVE links 
+    is=>'ro',
+);
+
 1;
