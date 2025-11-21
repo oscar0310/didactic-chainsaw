@@ -3,7 +3,8 @@ use Moo;
 use strictures 2;
 use namespace::clean;
 
-use Types::Standard qw(Str);
+use Types::Common::String qw(NonEmptyStr);
+use Types::Standard qw(ArrayRef);
 
 has description => ( #CVE description
     is => 'ro',
@@ -11,6 +12,10 @@ has description => ( #CVE description
     required => 1,  
 ); 
 
-
+has links => ( #CVE links
+    is =>'ro',
+    isa => ArrayRef[NonEmptyStr],
+    required => 1,
+)
 
 1;
