@@ -16,6 +16,6 @@ has links => ( #CVE links
     is =>'ro',
     isa => ArrayRef[NonEmptyStr],
     required => 1,
-)
+);
 
 1;
